@@ -50,7 +50,6 @@ public class StandardCalculator {
     public void clearResult() {
 
         result = 0;
-
     }
 
     
