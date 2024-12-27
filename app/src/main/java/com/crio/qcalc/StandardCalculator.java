@@ -1,6 +1,7 @@
 package com.crio.qcalc;
 
 public class StandardCalculator {
+
     private int result;
 
     public static void getVersion(){

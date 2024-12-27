@@ -3,6 +3,8 @@
  */
 package com.crio.qcalc;
 
+import com.crio.qcalc.ScientificCalculator;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -11,16 +13,9 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
 
-        StandardCalculator calc = new StandardCalculator();
-        calc.add(1, 1);
-        System.out.println(calc.getResult());
-        calc.subtract(1, 1);
-        System.out.println(calc.getResult());
-        calc.multiply(1, 1);
-        System.out.println(calc.getResult());
-        calc.divide(1, 1);
-        System.out.println(calc.getResult());
-        calc.clearResult();
-        calc.printResult();
+        ScientificCalculator calc = new ScientificCalculator();
+        int result = calc.modulo(8, 3);
+        System.out.println(result);
     }
 }
+
